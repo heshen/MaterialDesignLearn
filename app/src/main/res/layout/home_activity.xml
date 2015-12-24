@@ -22,25 +22,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textColor="@color/white"
-                    android:text="@string/home"/>
+                    android:text="@string/home"
+                    android:textColor="@color/white" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|right"
                     android:layout_marginRight="18dp"
-                    android:src="@mipmap/ic_photo_camera_white"/>
+                    android:src="@mipmap/ic_photo_camera_white" />
 
-                </android.support.v7.widget.Toolbar>
+            </android.support.v7.widget.Toolbar>
         </android.support.design.widget.AppBarLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler"
+        <android.support.v4.widget.SwipeRefreshLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="vertical"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            android:id="@+id/swipe_refresh_widget">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.v4.widget.SwipeRefreshLayout>
 
 
     </android.support.design.widget.CoordinatorLayout>

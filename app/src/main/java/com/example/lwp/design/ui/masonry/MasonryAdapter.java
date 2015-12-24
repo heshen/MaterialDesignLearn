@@ -12,6 +12,7 @@ import com.example.lwp.design.R;
 import java.util.List;
 
 /**
+ * 适配器
  * Created by clevo on 2015/7/27.
  */
 
@@ -23,6 +24,11 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
     public MasonryAdapter(List<Product> list,RecycleItemClickListener clickListener) {
         products=list;
         itemClickListener=clickListener;
+    }
+
+    public void setData(List<Product> list){
+        this.products = list;
+        this.notifyDataSetChanged();
     }
 
     @Override
