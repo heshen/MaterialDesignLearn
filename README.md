@@ -1,5 +1,6 @@
 # MaterialDesignLearn
-主要是学习design lib里面的控件使用
+主要是学习design lib里面的控件使用, 
+针对RecyclerView在原有基础上加入 下拉刷新，上拉刷新功能
 
 ##NavigationView
 ![NavigationView](https://github.com/thinkSky1206/MaterialDesignLearn/blob/master/images/nav.png )  
